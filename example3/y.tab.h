@@ -45,32 +45,29 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    NUMBER = 258,
-    NAME = 259,
-    FUNC = 260,
-    UMINUS = 261
+    SEMICOLON = 258,
+    FILETOK = 259,
+    WORD = 260,
+    FILENAME = 261,
+    QUOTE = 262,
+    OBRACE = 263,
+    EBRACE = 264,
+    ZONETOK = 265
   };
 #endif
 /* Tokens.  */
-#define NUMBER 258
-#define NAME 259
-#define FUNC 260
-#define UMINUS 261
+#define SEMICOLON 258
+#define FILETOK 259
+#define WORD 260
+#define FILENAME 261
+#define QUOTE 262
+#define OBRACE 263
+#define EBRACE 264
+#define ZONETOK 265
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-
-union YYSTYPE
-{
-#line 7 "calculator.y" /* yacc.c:1909  */
-
-    double dval;
-    struct symtab *symp;
-
-#line 71 "y.tab.h" /* yacc.c:1909  */
-};
-
-typedef union YYSTYPE YYSTYPE;
+typedef int YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
