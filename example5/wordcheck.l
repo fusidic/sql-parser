@@ -59,7 +59,8 @@ struct word *word_list;
 
 extern void *malloc();
 
-int add_word(int type, char *word)
+int
+add_word(int type, char *word)
 {
     struct word *wp;
     if (lookup_word(word) != LOOKUP) {
@@ -77,7 +78,8 @@ int add_word(int type, char *word)
     return 1;
 }
 
-int lookup_word(char *word)
+int
+lookup_word(char *word)
 {
     struct word *wp = word_list;
 

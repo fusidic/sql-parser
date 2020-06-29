@@ -1,0 +1,1 @@
+SELECT eno, name, salary/12 FROM emp where dno >= V4 AND dno <= V5 AND Job = prog AND age = 30;

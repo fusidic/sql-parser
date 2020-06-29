@@ -35,7 +35,6 @@
 
 # Executables
 *.exe
-*.out
 *.app
 *.i*86
 *.x86_64
@@ -61,3 +60,9 @@ dkms.conf
 # VS Code
 /.vscode/
 /lex-yacc-examples/
+
+
+# testing files
+foo*
+bar*
+/example*/
